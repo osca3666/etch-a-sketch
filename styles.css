@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    /* background-color : blanchedalmond; */
+}
+
+#container{
+    margin: 0px;
+    padding: 0px;
+    background-color : rgb(220, 40, 40);
+    border-radius: 1%;
+    border-color:brown;
+}
+
