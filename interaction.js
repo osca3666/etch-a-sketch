@@ -1,4 +1,5 @@
 //
+
 const user_input = document.createElement('input');
 user_input.type = 'range';
 user_input.max = '60';
@@ -8,6 +9,9 @@ user_input.style.height = '5%';
 user_input.style.width = '10%';
 
 let num_squares = user_input.value;
+
+const button = document.createElement('button');
+button.textContent = "Redo";
 
 
 //contains whole page
@@ -78,11 +82,17 @@ function createGame(){
 
 createGame();
 
-user_input.addEventListener("input", function() {
+
+button.onclick = function(){
     num_squares = user_input.value;
     createGame();
-  });
+};
 
+// user_input.addEventListener("input", function() {
+//     createGame();
+// });
+
+all_container.append(button);
 all_container.append(user_input);
 all_container.append(sketch_pad);
 document.body.append(all_container);
